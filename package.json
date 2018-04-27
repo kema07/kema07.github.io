@@ -1,0 +1,23 @@
+{
+  "name": "relevant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "taks3.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kema07/theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kema07/theme/issues"
+  },
+  "homepage": "https://github.com/kema07/theme#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}

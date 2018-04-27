@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 3</title>
+</head>
+<body>
+    <div class="info">
+        //3.1 - Facebook
+
+
+        var title = document.getElementsByClassName('_4ikz');
+
+        for (var i = 0; i < title.length; i++) {
+        var allTitles	= title[i];
+        var newText = document.createElement('div');
+        newText.className = 'iDidIt';
+        allTitles.appendChild(newText);
+
+
+        var addImage = document.createElement("IMG");
+        addImage.setAttribute("src", "https://n-w.tv/wp-content/uploads/2017/12/panda.jpg");
+        addImage.setAttribute("width", "100%");
+        addImage.setAttribute("height", "400px");
+        addImage.setAttribute("alt", "image");
+        document.getElementsByClassName('iDidIt')[i].appendChild(addImage);
+
+        var myHeading = document.createElement("H1");
+        var textContent = document.createTextNode("Hello, relevant :) This is "+i+" post");
+        myHeading.appendChild(textContent);
+        document.getElementsByClassName('iDidIt')[i].appendChild(myHeading);
+        }
+
+
+
+        //3.2 - завдання до сайту https://venturebeat.com/
+
+        var title = document.getElementsByClassName('article-title');
+
+        for (var i = 0; i < title.length; i++) {
+        var allTitles	= title[i].textContent;
+        var json = JSON.stringify(allTitles);
+        console.log(json);
+        }
+    </div>
+</body>
+</html>
