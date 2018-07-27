@@ -14,6 +14,7 @@ body {
 	font-size: 24px;
 	font-family: 'Kirang Haerang', cursive;
 	background-image: url('https://images.pexels.com/photos/1092364/pexels-photo-1092364.jpeg?cs=srgb&dl=bricks-pattern-wall-1092364.jpg&fm=jpg')
+		position: relative;
 }
 
 .container {
@@ -29,7 +30,12 @@ button {
 .success {
 	color: green;
 }
-
+	#about {
+position: absolute;
+left:0;
+right:0;
+bottom: 80%;
+}
 .loose {
 	color: red;
 }
@@ -43,23 +49,23 @@ button {
   <button id="button">Calculate !t</button>
 </form>
 <div id="output"></div>
-<div>
+<div id="about">
  About
 
 
 System A: for 1st place bet
-
+</br>
 x + 2.8x + 4x = 400
 7.8x = 400
 x = 50
 
-
-
+</br>
+</br>
 System B: forEach in total bet
-
+</br>
 const sum = 450
 const coef = 1.9
-
+</br>
 40 + 36
 120 + 32 (include profit 1st - 36, clear money = 68)
 290 + return 1bet + 2bet + 1betWin + 2betWin + this.profit = 33
