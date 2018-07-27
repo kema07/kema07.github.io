@@ -46,6 +46,29 @@ button {
   <button id="button">Calculate !t</button>
 </form>
 <div id="output"></div>
+<div>
+ About
+
+
+System A: for 1st place bet
+
+x + 2.8x + 4x = 400
+7.8x = 400
+x = 50
+
+
+
+System B: forEach in total bet
+
+const sum = 450
+const coef = 1.9
+
+40 + 36
+120 + 32 (include profit 1st - 36, clear money = 68)
+290 + return 1bet + 2bet + 1betWin + 2betWin + this.profit = 33
+So this mean, that even if U loos two first bet and win 3rd - U win all three events.
+Official profit every 3 bets - 100 hrn = days 
+</div>
 <!-- <div id="q">
   x + 2x + 3x = 300
   x = 50     +45           -10%
@@ -82,7 +105,7 @@ Official profit every 3 bets - 100 hrn = days
 </div> -->
 </div>
 <script>
-    window.onload=function(){
+   window.onload=function(){
 	const cashBet = document.getElementById('button');
 	const myBet = document.getElementById('input');
 	if(cashBet){
@@ -94,9 +117,9 @@ Official profit every 3 bets - 100 hrn = days
 		const inUsd = 27;
 		const myMoney =  myBet.value;
 		const middleCof = 1.87;
-		const first = Math.ceil(myMoney/6);
+		const first = Math.ceil(myMoney/11.25);
 		const firstSuccess = Math.ceil(first*middleCof-first)
-		const second = Math.ceil(myMoney/2.7272);
+		const second = Math.ceil(myMoney/3.75);
 		const secondSuccess = Math.ceil();
 		const last = myMoney - first - second;
 		betBody.innerHTML = `Your bet is: ${myMoney}
@@ -106,6 +129,7 @@ Official profit every 3 bets - 100 hrn = days
 							<div id="second">For second try: ${second}</div>
 							<div id="third">The last one will: ${last}</div>`;
 	}
+}
 }
 </script>
 </body>
