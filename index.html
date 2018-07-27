@@ -1,361 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <link rel="stylesheet" href="style/style.css" type="text/css" media="all">
-    <link rel="stylesheet" href="style/fontawesome/fa-brands.css" type="text/css" media="all">
-    <link rel="stylesheet" href="style/fontawesome/fa-regular.css" type="text/css" media="all">
-    <link rel="stylesheet" href="style/fontawesome/fontawesome.css" type="text/css" media="all">
-    <link rel="stylesheet" href="style/fontawesome/fontawesome.min.css" type="text/css" media="all">
-    <link rel="stylesheet" href="style/fontawesome/fontawesome-all.min.css" type="text/css" media="all">
-    <link rel="stylesheet" href="style/fontawesome/fontawesome-all.css" type="text/css" media="all">
-    <link rel="stylesheet" href="style/fontawesome/fa-solid.css" type="text/css" media="all">
-    <link rel="stylesheet" href="style/lib.css" type="text/css" media="all">
-    <link rel="stylesheet" href="fonts/font.css" type="text/css" media="all">
-    <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" media="all">
-    <title>Test Task</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="app.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Kirang+Haerang" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  <title>Test Calculator</title>
+<style>
+body {
+	font-size: 24px;
+	font-family: 'Kirang Haerang', cursive;
+	background-image: url('https://images.pexels.com/photos/1092364/pexels-photo-1092364.jpeg?cs=srgb&dl=bricks-pattern-wall-1092364.jpg&fm=jpg')
+}
+
+.container {
+	width: 94%;
+	margin: 0 auto;
+}
+
+button {
+	display: block;
+	margin-top: 25px;
+}
+
+.success {
+	color: green;
+}
+
+.loose {
+	color: red;
+}
+
+</style>
 </head>
 <body>
-<div class="content">
-    <div class="relevant">
-        <div class="top_block cover" id="navid" style="background-image: url('images/top_bg.jpg')">
-            <div class="container">
-                <header class="logo_img">
-                    <a href="" class="logo">
-                        <img src="images/logo.png" alt="image">
-                    </a>
-                    <div>
-                        <a id="toggle" class="fas fa-plus"></a>
-                    </div>
-                    <nav id="sidebar" class="tra">
-                        <div class="top_nav tra">
-                        </div>
-                        <div class="mymenu">
-                            <div class="nav_link">
-                                <a class="fas fa-home fa-fw" href="">
-                                    <span>Home</span>
-                                </a>
-                            </div>
-                            <div class="nav_link">
-                                <a class="fas fa-hand-peace fa-fw">
-                                    <span>Info</span>
-                                </a>
-                            </div>
-                            <div class="nav_link">
-                                <a class="fas fa-image fa-fw">
-                                    <span>Gallery</span>
-                                </a>
-                            </div>
-                            <div class="nav_link">
-                                <a class="fas fa-address-card fa-fw">
-                                    <span>Address</span>
-                                </a>
-                            </div>
-                            <div class="nav_link">
-                                <a class="fas fa-microphone fa-fw">
-                                    <span>Settings</span>
-                                </a>
-                            </div>
-                            <div class="nav_link">
-                                <a class="fas fa-paper-plane fa-fw">
-                                    <span>Contact us</span>
-                                </a>
-                            </div>
-                        </div>
-                    </nav>
-                </header>
-                <div class="top_title" >
-                    <h1><span id="top_title">We are</span>ready for blueprint <span id="bottom_title">we can make your home beautiful</span></h1>
-                    <a href="#works" class="button insidelink tra">Our works</a>
-                </div>
-            </div>
-            <div class="gobottom tra">
-                <a href="#home" class="fas fa-angle-down center insidelink"></a>
-            </div>
-        </div>
-        <div class="video frame">
-            <div class="description">
-                <p>Keep away from people who try to belittle Good just ask Planning your ambitions Design people always do that bbvut the really great. Friendly neighbour there that power. Keep away Architecture who try to Ambitions people do that really great.</p>
-            </div>
-            <div class="video_content cover" style="background-image: url('images/video.jpg')">
-                <div class="watch_more flex">
-                    <div class="for_link">
-                        <a href="https://www.youtube.com/watch?v=bXHiLPUgr8I&list=LLVCITban2E3h10SK8hMYV7w&index=178&t=0s" class="fas fa-play center tra" target="_blank"></a>
-                        <div class="video_info">Watch full story</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="we_can frame" id="home">
-            <h2>We can make your <br>home beautiful</h2>
-            <div class="container">
-                <div class="items flex">
-                    <div class="item flex">
-                        <div class="item_logo">
-                            <i class="fas fa-cube tra"></i>
-                        </div>
-                        <div class="description">
-                            <h4>Architectural design</h4>
-                            <p>Lorem ipsum dolor sit consectetur adipiscing elit. Aenean nulla risus, semper sit amet turpis id interdum viverra sapien.</p>
-                        </div>
-                    </div>
-                    <div class="item flex">
-                        <div class="item_logo">
-                            <i class="far fa-compass tra"></i>
-                        </div>
-                        <div class="description tra">
-                            <h4>Interior design</h4>
-                            <p>Lorem ipsum dolor sit consectetur adipiscing elit. Aenean nulla risus, semper sit amet turpis id interdum viverra sapien.</p>
-                        </div>
-                    </div>
-                    <div class="item flex">
-                        <div class="item_logo">
-                            <i class="far fa-chart-bar tra"></i>
-                        </div>
-                        <div class="description">
-                            <h4>3d visualization & animation</h4>
-                            <p>Lorem ipsum dolor sit consectetur adipiscing elit. Aenean nulla risus, semper sit amet turpis id interdum viverra sapien.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider" id="works">
-                    <div class="swiper-container">
-                        <div class="line"></div>
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide cover" style="background-image: url('images/portfolio.jpg')" >
-                                <i class="fas fa-expand-arrows-alt"></i>
-                                <div class="info">
-                                    <div class="proj_name">
-                                        Project name 01
-                                    </div>
-                                    <i class="fas fa-map-marker-alt"></i>  MI, 302, Road 22
-                                </div>
-                            </div>
-                            <div class="swiper-slide cover" style="background-image: url('images/testimonials.jpg')" >
-                                <i class="fas fa-expand-arrows-alt"></i>
-                                <div class="info">
-                                    <div class="proj_name">
-                                        Project name 02
-                                    </div>
-                                    <i class="fas fa-map-marker-alt"></i>  MI, 302, Road 22
-                                </div>
-                            </div>
-                            <div class="swiper-slide cover" style="background-image: url('images/video.jpg')" >
-                                <i class="fas fa-expand-arrows-alt"></i>
-                                <div class="info">
-                                    <div class="proj_name">
-                                        Project name 03
-                                    </div>
-                                    <i class="fas fa-map-marker-alt"></i>  MI, 302, Road 22
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
-                <div>
-                </div>
-            </div>
-        </div>
-        <div class="teem frame cover" style="background-image: url('images/teem.jpg')">
-            <div class="container">
-                <h2>Meet the team</h2>
-                <div class="info">
-                    <p>
-                        Keep away from people who try to belittle Good just ask Planning your ambitions Design people always do that bbvut the really great. Friendly neighbour there that power.
-                    </p>
-                </div>
-            </div>
-            <div class="container">
-                <div class="staff">
-                    <div class="items flex">
+<div class="container">
+  <form>
+  <input type="number" id="input">
+  <button id="button">Calculate !t</button>
+</form>
+<div id="output"></div>
+<!-- <div id="q">
+  x + 2x + 3x = 300
+  x = 50     +45           -10%
+  x = 100    +40           -20%
+  x = 150    =0             +30%
 
-                        <a class="fas fa-plus new qq">
-                            <div class="name">
-                                <span>DEBORAH HUGHES</span>
-                                Project Manager
-                            </div>
-                        </a>
+  При умові рахунку від 1-ї:
+  40  +36
+  100  +50
+  160 +104
 
-                        <a class="fas fa-plus new qq">
-                            <div class="name">
-                                <span>DEBORAH HUGHES</span>
-                                Project Manager
-                            </div>
-                        </a>
 
-                        <a class="fas fa-plus new qq">
-                            <div class="name">
-                                <span>DEBORAH HUGHES</span>
-                                Project Manager
-                            </div>
-                        </a>
+System: for 1st place bet
 
-                        <a class="fas fa-plus new qq">
-                            <div class="name">
-                                <span>DEBORAH HUGHES</span>
-                                Project Manager
-                            </div>
-                        </a>
+x + 2.8x + 4x = 400
+7.8x = 400
+x = 50
 
-                        <a class="fas fa-plus new qq">
-                            <div class="name">
-                                <span>DEBORAH HUGHES</span>
-                                Project Manager
-                            </div>
-                        </a>
+System: forEach in total bet
 
-                        <a class="fas fa-plus new qq">
-                            <div class="name">
-                                <span>DEBORAH HUGHES</span>
-                                Project Manager
-                            </div>
-                        </a>
+const sum = 450
+const coef = 1.9
 
-                        <a class="fas fa-plus new qq">
-                            <div class="name">
-                                <span>DEBORAH HUGHES</span>
-                                Project Manager
-                            </div>
-                        </a>
+40 + 36
+120 + 32 (include profit 1st - 36, clear money = 68)
+290 + return 1bet + 2bet + 1betWin + 2betWin + this.profit = 33
+So this mean, that even if U loos two first bet and win 3rd - U win all three events.
+Official profit every 3 bets - 100 hrn = days 
 
-                        <a class="fas fa-plus new qq">
-                            <div class="name">
-                                <span>DEBORAH HUGHES</span>
-                                Project Manager
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="statistics">
-            <div class="container">
-                <div class="counter flex">
-                    <div class="item">
-                        <div class="num count">
-                            <span>150,192</span>
-                        </div>
-                        <h5>Satisfied Users</h5>
-                        <p>Lorem Ipsum is <strong>simply dummy</strong> text of the <strong>printing</strong> and typesetting.</p>
-                    </div>
-                    <div class="item">
-                        <div class="num count">
-                            <span>5,972</span>
-                        </div>
-                        <h5>Coffee Cups</h5>
-                        <p>Lorem Ipsum is <strong>simply dummy</strong> text of the <strong>printing</strong> and typesetting.</p>
-                    </div>
-                    <div class="item">
-                        <div class="num count">
-                            <span>1500</span>
-                        </div>
-                        <h5>Projects</h5>
-                        <p>Lorem Ipsum is <strong>simply dummy</strong> text of the <strong>printing</strong> and typesetting.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="testimonials cover" style="background-image: url('images/testimonials.jpg')">
-            <div class="container">
-                <h2>Testimonials</h2>
-                <div class="items flex">
-                    <div class="item">
-                        <div class="top_info">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when</p>
-                        </div>
-                        <div class="about">
-                            <p>WOELDLOF Miki   /   symu.co</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="top_info">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when</p>
-                        </div>
-                        <div class="about">
-                            <p>WOELDLOF Miki   /   symu.co</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="top_info">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when</p>
-                        </div>
-                        <div class="about">
-                            <p>WOELDLOF Miki   /   symu.co</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="top_info">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially.</p>
-                        </div>
-                        <div class="about">
-                            <p>WOELDLOF Miki   /   symu.co</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="top_info">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when</p>
-                        </div>
-                        <div class="about">
-                            <p>WOELDLOF Miki   /   symu.co</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="forms frame">
-            <h2>Send a message using<br> the form below!</h2>
-            <div class="container">
-                <div class="contact_us flex">
-                    <div class="inputs">
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email">
-                        <input list="subject" placeholder="Subject">
-                        <datalist id="subject">
-                            <option value="True">
-                            <option value="False">
-                        </datalist>
-                        <textarea placeholder="What do you want to say..."></textarea>
-                        <a class="button">Submit Now</a>
-                    </div>
-                    <div class="map">
-                        <img src="images/map.jpg" alt="image">
-                        <div class="info">
-                            <span>Postal Address</span>
-                            <div class="address">PO Box 16132 Aollins Street eest</div>
-                            <div class="address">Victoria 8007 Australia</div>
-                            <div class="address">Phone: +61 3 8126 6284</div>
-                            <div class="address">FAX: +61 3 8312 6284</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+450
+12.85
+4.1
+
+</div> -->
 </div>
-<footer>
-    <div class="container">
-        <div class="footer_info flex">
-            <div class="by flex">
-                <span>Posted by Ganjaparker</span>
-                <span class="tasks"><a target="_blank" href="https://kema07.github.io/task2">Task2</a></span>
-                <span class="tasks"><a target="_blank" href="https://kema07.github.io/task3">Task3</a></span>
-            </div>
-            <div class="social_media">
-                <a href="#" class="fab fa-google-plus-g"></a>
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-twitter"></a>
-            </div>
-        </div>
-    </div>
-</footer>
-<script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript" src="js/lib.js"></script>
+<script>
+    window.onload=function(){
+	const cashBet = document.getElementById('button');
+	const myBet = document.getElementById('input');
+	if(cashBet){
+  	cashBet.addEventListener('click', letsMath);
+	}
+	function letsMath(e) {
+		const betBody = document.getElementById('output');
+		e.preventDefault();
+		const inUsd = 27;
+		const myMoney =  myBet.value;
+		const middleCof = 1.87;
+		const first = Math.ceil(myMoney/6);
+		const firstSuccess = Math.ceil(first*middleCof-first)
+		const second = Math.ceil(myMoney/2.7272);
+		const secondSuccess = Math.ceil();
+		const last = myMoney - first - second;
+		betBody.innerHTML = `Your bet is: ${myMoney}
+							<div id="first">For first try: ${first}. If <span class="success">success</span> - clear <span class="success">profit</span> will: ~ <span class="success">${firstSuccess}</span></div>
+							<div id="advice">If step one was success - then try to continue with it. Your next bet = ${first}</div>
+							<div><span class="loose">If no</span>: go next step</div>
+							<div id="second">For second try: ${second}</div>
+							<div id="third">The last one will: ${last}</div>`;
+	}
+}
+</script>
 </body>
 </html>
